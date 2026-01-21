@@ -107,7 +107,7 @@ DATABASE_URL=mongodb://mongodb:27017/yumi-chat
 
 ```env
 ANTHROPIC_API_KEY=sk-ant-api03-your-key-here
-DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/yumi-chat?retryWrites=true&w=majority
+DATABASE_URL=mongodb+srv://<YOUR_USERNAME>:<YOUR_PASSWORD>@<YOUR_CLUSTER>.mongodb.net/yumi-chat?retryWrites=true&w=majority
 ```
 
 #### 本番環境
@@ -115,7 +115,7 @@ DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/yumi-chat?retry
 ```env
 NODE_ENV=production
 ANTHROPIC_API_KEY=sk-ant-api03-your-key-here
-DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/yumi-chat
+DATABASE_URL=mongodb+srv://<YOUR_USERNAME>:<YOUR_PASSWORD>@<YOUR_CLUSTER>.mongodb.net/yumi-chat
 ALLOWED_ORIGINS=https://yumi-chat.example.com
 ```
 
@@ -192,7 +192,7 @@ docker start mongodb
 
 接続文字列の例：
 ```
-mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/yumi-chat?retryWrites=true&w=majority
+mongodb+srv://<YOUR_USERNAME>:<YOUR_PASSWORD>@<YOUR_CLUSTER>.mongodb.net/yumi-chat?retryWrites=true&w=majority
 ```
 
 ### データベースの初期化
